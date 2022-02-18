@@ -1,0 +1,215 @@
+    h4 {
+        font-size: 20px;
+        background-color: #fff;
+        color: black;
+        padding: 10px;
+        width: 70%;
+        border-radius: 15px;
+        margin: 10px auto;
+    }
+    
+    td {
+        width: 97%;
+        display: flex;
+        align-items: center;
+        margin: 5px auto;
+        background-color: #fff;
+        border-radius: 10px;
+        height: 60px;
+    }
+    
+    table {
+        width: 100%;
+    }
+    
+    label {
+        color: #fff;
+    }
+    
+    .infoperso {
+        background-color: #4472c4;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 15px;
+        color: #fff;
+        line-height: 2;
+        margin: 80px auto;
+        width: 100%;
+    }
+    
+    .carnet {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10px;
+    }
+    
+    .infomail {
+        overflow: auto;
+        padding: 10px;
+    }
+    
+    .vaccin {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        background-color: #4472c4;
+        border-radius: 15px;
+        padding: 10px;
+    }
+    
+    .ajoutvaccin {
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .ajoutvaccin {
+        width: 100%;
+    }
+    
+    select {
+        height: 50px;
+    }
+    
+    .datevaccin input {
+        width: 90%;
+        padding: 15px 30px;
+        border-radius: 15px;
+        border: none;
+    }
+    
+    .submit {
+        background-color: #18810f;
+        color: #fff;
+        width: 15%;
+        height: 50px;
+        font-size: 20px;
+        cursor: pointer;
+        border: none;
+    }
+    
+    .submit:hover {
+        background-color: #23c214;
+        transition: 0.2s;
+    }
+    
+    .tableau {
+        background-color: lightgray;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10%;
+        margin-right: 10%;
+        height: 200px;
+        overflow: auto;
+        width: 80%;
+    }
+    
+    .infovaccin {
+        display: flex;
+        width: 90%;
+        justify-content: space-around;
+    }
+    
+    td img {
+        width: 50px;
+    }
+    
+    .infovaccin p {
+        width: 30%;
+    }
+    
+    .option-vaccin {
+        display: flex;
+        width: 20%;
+        justify-content: center;
+    }
+    
+    .button {
+        height: 40px;
+        display: flex;
+        align-items: center;
+    }
+    
+    input,
+    .typedevaccin {
+        border-radius: 15px;
+    }
+    
+    .modif:hover,
+    .delete:hover {
+        background-color: lightgray;
+        border-radius: 10px;
+    }
+    
+    footer {
+        margin-top: 40px;
+    }
+    /*--------------------------------responsive------------------------------------*/
+    /*---------------tablette-----------------*/
+    
+    @media (max-width: 900px) {
+        .vaccin {
+            width: 100%;
+            margin: 10px 0;
+            padding: 20px 0;
+        }
+    }
+    /*-----------------mobile-------------------*/
+    
+    @media (max-width: 720px) {
+        .vaccin {
+            width: 100%;
+            margin: 10px auto;
+            padding: 20px 0;
+            font-size: small;
+        }
+        .ajoutvaccin {
+            flex-direction: column;
+            width: 70%;
+            margin: 0 auto;
+        }
+        .datevaccin input {
+            width: 70%;
+            margin: 5px auto
+        }
+        .ajouter {
+            font-size: small;
+        }
+        td {
+            display: flex;
+            align-items: center;
+        }
+        .modif img {
+            margin-left: 10px;
+            width: 40px;
+        }
+        .delete {
+            width: 40px;
+        }
+        .option-vaccin {
+            padding-right: 30px;
+        }
+        .infovaccin {
+            font-size: 15px;
+            display: block;
+            margin-left: 15px;
+            margin-top: 5px;
+        }
+        .infovaccin p {
+            margin-bottom: 5px;
+        }
+        .submit {
+            width: 30%;
+        }
+    }

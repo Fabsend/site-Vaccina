@@ -1,0 +1,100 @@
+.main {
+  width: 60%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.vaccin {
+  margin: 0 auto;
+  text-align: center;
+  font-size: large;
+}
+
+.vaccin input {
+  padding: 10px 60px;
+  margin: 10px auto 20px auto;
+}
+
+.tableau {
+  margin: 50px auto;
+  font-size: large;
+  background-color: #4472c4;
+  border-radius: 15px;
+  width: 100%;
+  border: 3px solid #4472c4;
+}
+
+.tableau-scroll {
+  height: 300px;
+  overflow: auto;
+  background-color: lightgray;
+  border-top: 3px solid white;
+  margin: 10px;
+}
+
+.option-vaccin {
+  width: 97%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: #fff;
+  color: black;
+  margin: 5px auto;
+  border: 1px solid black;
+}
+
+.tableau h1 {
+  font-size: 30px;
+  margin: 40px;
+  text-align: center;
+  color: #fff;
+  margin: 40px;
+}
+
+table {
+  display: block;
+  widows: 100%;
+}
+
+.option-vaccin div {
+  margin: 5px;
+}
+
+.modif:hover,
+.delete:hover {
+  background-color: lightgray;
+  border-radius: 10px;
+}
+/*-------------------responsive----------------*/
+/*-------tablette--------*/
+
+@media (max-width: 1000px) {
+  .main {
+    width: 90%;
+  }
+  .vaccin input {
+    padding: 10px 50px;
+    margin: 10px auto 20px auto;
+  }
+  .option-vaccin div {
+    margin: 5px;
+    display: flex;
+  }
+}
+/*----------mobile----------*/
+
+@media (max-width: 600px) {
+  .main {
+    width: 95%;
+  }
+  .vaccin input {
+    padding: 5px 40px;
+    margin: 10px auto 20px auto;
+  }
+  .modif,
+  .delete {
+    width: 40px;
+  }
+}

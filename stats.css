@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+table{
+    margin: auto;
+    table-layout: fixed;
+}
+
+.csstable {
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.csstable th,
+.csstable td {
+    padding: 20px 20px;
+}
+
+.csstable tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.csstable tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.colortitre{
+    background-color: #B5D0EF;
+}
+
+.csstable .taille{
+    padding: 40px 40px;
+    background-color: #B5D0EF;
+}
+
+.csstable .taille2{
+    padding: 40px 100px;
+}
+
+@media(max-width:900px) {   
+
+    .csstable{
+        font-size: 0.9rem;
+    }
+
+    .csstable th,
+    .csstable td {
+        padding: 5px 5px;
+    }
+    
+    .csstable .taille2{
+        padding: 20px 50px;
+    }
+}
+
+@media(max-width:600px) {
+
+    .csstable{
+        font-size: 0.8rem;
+    }
+
+    .csstable th,
+    .csstable td {
+        padding: 5px 5px;
+    }
+    
+    .csstable .taille2{
+        padding: 0px 25px;
+    }
+}

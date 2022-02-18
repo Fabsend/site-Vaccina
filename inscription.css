@@ -1,0 +1,129 @@
+.main-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.inscription {
+    width: 500px;
+    margin: 50px auto;
+    background-color: #4472c4;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.inscription h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+.nomprenom {
+    display: inline;
+}
+
+.inscription div {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input:nth-child(3) {
+    padding: 15px;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.inscrire-btn {
+    text-align: center;
+}
+
+.inscrire-btn input {
+    text-align: center;
+    padding: 15px 25px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: lawngreen;
+    border: none;
+    cursor: pointer;
+}
+
+.inscrire-btn input:hover {
+    background-color: #70c917;
+}
+
+p {
+    text-align: center;
+    padding: 10px;
+}
+
+.inscription a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+input {
+    border: none;
+}
+
+
+/*-----imgs------*/
+
+.main-div img {
+    width: 600px;
+    margin-top: 100px;
+}
+
+
+/*-------responsive---------*/
+
+
+/*-------tablette------*/
+
+@media(max-width:1000px) {
+    .main-div {
+        display: block;
+        margin: 0 auto;
+    }
+    .insc-img {
+        width: 100vw;
+        height: auto;
+    }
+    .main-div img {
+        width: 300px;
+        margin: 0 30%;
+    }
+    .inscription {
+        box-sizing: border-box;
+        width: 90%;
+        margin: 40px;
+    }
+    .inscription form {
+        width: 100%;
+        font-size: small;
+    }
+}
+
+
+/*----------mobile--------*/
+
+@media(max-width:600px) {
+    .main-div {
+        flex-direction: column;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+    .main-div img {
+        width: 30%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .inscription {
+        box-sizing: border-box;
+        width: 84%;
+        margin: 10px auto;
+    }
+    .inscription form {
+        width: 100%;
+        font-size: small;
+    }
+}
